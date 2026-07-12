@@ -7,6 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+
 @Entity
 @Table(name = "Register")
 public class RegisterEntity {
@@ -20,7 +21,7 @@ public class RegisterEntity {
     @Column(name = "email", nullable = false, unique = true)
     private String email;
 
-    @Column(name = "phone")
+    @Column(name = "phone", length = 10)
     private String phone;
 
     @Column(name = "username", nullable = false, unique = true)

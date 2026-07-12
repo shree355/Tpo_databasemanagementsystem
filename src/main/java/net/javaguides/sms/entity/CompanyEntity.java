@@ -26,7 +26,7 @@ public class CompanyEntity {
     @Column(name = "email", unique = true)
     private String email;
 
-    @Column(name = "phone")
+    @Column(name = "phone",length = 10)
     private String phone;
 
     @Column(name = "website")
